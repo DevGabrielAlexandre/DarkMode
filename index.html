@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Desenvolvendo o botão modo escuro</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="alternador">
+        <i class="indicador"></i>
+    </div>
+    <script>
+        const body = document.querySelector('body'); //Pega o body
+        const alternador = document.getElementById('alternador'); //"Pega a div do html"
+        alternador.onclick = function(){ //Transforma o click dela em uma função
+            alternador.classList.toggle('ativo') //adiciona a class 'ativo'
+            body.classList.toggle('ativo')  //adiciona a class 'ativo'
+        }
+    </script>
+</body>
+</html>
